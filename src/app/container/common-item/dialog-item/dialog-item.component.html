@@ -1,0 +1,18 @@
+<h3 mat-dialog-title>
+{{ data.title }}</h3>
+<mat-dialog-content>
+  {{ data.message }}
+  <br />
+</mat-dialog-content>
+<mat-dialog-actions>
+  <table cellspacing="15">
+    <tr>
+      <td>
+        <button mat-raised-button color="accent" [mat-dialog-close]="true" cdkFocusInitial>OK</button>
+      </td>
+      <td>
+        <button mat-raised-button mat-dialog-close>cancel</button>
+      </td>
+    </tr>
+  </table>
+</mat-dialog-actions>
