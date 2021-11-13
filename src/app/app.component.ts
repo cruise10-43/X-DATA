@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {VERSION} from '@angular/material/core';
+import { FooterTextConst, ToolBarTitleConst } from './app-const'
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,9 @@ import {VERSION} from '@angular/material/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'X Data';
+
+  public footerText = FooterTextConst.FOOTER_TREXT;
+  public toolBarTitle = ToolBarTitleConst.TOOL_BAR_TITLE;
 
   constructor() {
   }

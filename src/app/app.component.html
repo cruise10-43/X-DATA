@@ -1,16 +1,16 @@
-<div class="example-container">
+<div class="tool-bar">
 <div class='mat-toolbar'>
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <button mat-icon-button>
         <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
       </button>
-    <h1> X Database</h1>
+    <h1 class="toolBarTitle"> {{toolBarTitle}}</h1>
     </mat-toolbar-row>
   </mat-toolbar>
 </div>
 
-<div style="height: calc(100vh - 64px);" >
+<div class="container">
   <mat-sidenav-container fxFlexFill class="test">
     <mat-sidenav #sidenav mode="over">
       <mat-nav-list>
@@ -28,4 +28,9 @@
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
+</div>
+<div class="footer">
+      <small>
+        {{footerText}}
+      </small>
 </div>

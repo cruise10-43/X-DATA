@@ -1,12 +1,22 @@
 .mat-toolbar {
+    height: 64px;
     background: #02212e;
+}
+
+.toolBarTitle {
+    font-weight: 900;
+}
+
+.toolBarTitle2 {
+    color: #b56ed1;
 }
 
 .app-container {
     position: relative;
     width: 100%;
-    /* 画面の高さ = ディスプレイの高さ：100vh - ツールバーの高さ：65px */
-    min-height: calc(100vh - 64px);
+    /* 画面の高さ =
+    ディスプレイの高さ：100vh - ツールバーの高さ：65px - フッターの高さ：25px*/
+    min-height: calc(100vh - 64px - 25px);
     background: url("..//assets/images/background.png") center / cover;
     background-size: contain;
 }
@@ -16,17 +26,11 @@
     padding-left: 50px;
 }
 
-.mat-stroked-button {
-    font-family: NotesESABold, sans-serif!important;
-    font-size: large;
-    margin-left: 10px;
-}
-
 .test {
     flex: 1;
 }
 
-.example-container {
+.tool-bar {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -34,4 +38,15 @@
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.container {
+    height: calc(100vh - 64px -25px);
+}
+
+.footer {
+    height: 25px !important;
+    text-align: center;
+    color: white;
+    background: #02212e;
 }
