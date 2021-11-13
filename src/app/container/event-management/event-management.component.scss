@@ -10,7 +10,7 @@
     font-weight: bold;
 }
 
-.example-container {
+.todo-container {
     width: 300px;
     max-width: 100%;
     margin: 0 10px 10px 0;
@@ -18,7 +18,7 @@
     vertical-align: top;
 }
 
-.example-list {
+.todo-list {
     border: solid 1px rgb(204, 204, 204);
     min-height: 40px;
     border-radius: 4px;
@@ -26,7 +26,7 @@
     display: block;
 }
 
-.example-box {
+.todo-box {
     padding: 10px 10px;
     border-bottom: solid 1px #ccc;
     color: rgba(0, 0, 0, 0.87);
@@ -36,8 +36,9 @@
     justify-content: space-between;
     box-sizing: border-box;
     cursor: move;
-    background: rgb(252, 246, 234);
+    background-color: transparent;
     font-size: 14px;
+    color: #2cce75;
 }
 
 .cdk-drag-preview {
@@ -54,15 +55,15 @@
     transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
 
-.example-box:last-child {
+.todo-box:last-child {
     border: none;
 }
 
-.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+.todo-list.cdk-drop-list-dragging .todo-box:not(.cdk-drag-placeholder) {
     transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
 
-.example-box:hover {
-    background-color: transparent;
-    color: #2cce75;
+.todo-box:hover {
+    background: rgb(252, 246, 234);
+    color: rgb(34, 78, 34);
 }
