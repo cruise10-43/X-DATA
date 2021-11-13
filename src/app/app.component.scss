@@ -1,3 +1,13 @@
+.tool-bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .mat-toolbar {
     height: 64px;
     background: #02212e;
@@ -5,10 +15,6 @@
 
 .toolBarTitle {
     font-weight: 900;
-}
-
-.toolBarTitle2 {
-    color: #b56ed1;
 }
 
 .app-container {
@@ -21,27 +27,8 @@
     background-size: contain;
 }
 
-.menuButton {
-    padding-top: 15px;
-    padding-left: 50px;
-}
-
-.test {
-    flex: 1;
-}
-
-.tool-bar {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .container {
-    height: calc(100vh - 64px -25px);
+    height: calc(100vh - 64px - 25px);
 }
 
 .footer {
